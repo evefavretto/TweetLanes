@@ -80,7 +80,7 @@ public class AppdotnetApi extends SocialNetApi {
     BasicHttpClient getHttpClient() {
 
         BasicHttpClient httpClient = new BasicHttpClient(
-                "https://alpha-api.app.net");
+                "https://api.pnut.io/");
         httpClient.addHeader("Authorization", "Bearer " + mCurrentOAuthToken);
         httpClient.setConnectionTimeout(2000);
         return httpClient;
@@ -89,7 +89,7 @@ public class AppdotnetApi extends SocialNetApi {
     BasicHttpClient getHttpClient(String accessToken) {
 
         BasicHttpClient httpClient = new BasicHttpClient(
-                "https://alpha-api.app.net");
+                "https://api.pnut.io/");
         httpClient.addHeader("Authorization", "Bearer " + accessToken);
         httpClient.setConnectionTimeout(2000);
         return httpClient;
